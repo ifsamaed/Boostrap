@@ -1,23 +1,26 @@
-    <!-- truco: escribiendo "html:5 + tab"-->
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
+<!-- truco: escribiendo "html:5 + tab"-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Margaret | Ingeniera de Software </title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    </head>
-    <body>
-    <section class ="bienvenidos"> 
-     <header class ="encabezado" role="banner">
-         <a reft= "index.html">
-            <img  src="images/logo.svg" alt= "Logo de sitio"/>
-         </a> 
-         <!-- Buscador-->
-              <button type="button" class="boton-buscar">Btn Buscar</button>
-            <button type="button" class="boton-menu">Btn Menu</button>
-         <!-- Formulario-->
+</head>
+
+<body>
+    <section class="bienvenidos">
+        <header class="encabezado" role="banner">
+            <a reft="index.html">
+                <img src="images/logo.svg" alt="Logo de sitio" />
+            </a>
+            <!-- Buscador-->
+            <button type="button" class="boton-buscar">Boton Buscar</button>
+            <button type="button" class="boton-menu">            <button type="button" class="boton-buscar">Boton Buscar</button>
+  Menu</button>
+            <!-- Formulario-->
             <!-- Recomendacion: Has de los id's muy intuitivos-->
             <form action="#" id="bloque-buscar">
                 <!-- Pondremos una # de primeras y luego cuando migremos el cms se encargara de realizar este comportamiento-->
@@ -31,45 +34,121 @@
 
             <!-- Boton de menu-->
             <!-- INFO: Todo menu de navegación debe de estar dentro de una etiqueta NAV-->
-            <!-- TRUCO: Brackets interpreta, si encuentra una etiqueta seguida de una almohadilla, nombre del id : nav#nombreID--> 
-                <nav id="menu-principal">
-                    <ul>
-                        <!-- 
+            <!-- TRUCO: Brackets interpreta, si encuentra una etiqueta seguida de una almohadilla, nombre del id : nav#nombreID-->
+            <nav id="menu-principal">
+                <ul>
+                    <!-- 
                         - Como en el diseño principal el elemento activo tiene el enlace seleccionado, asignaremos una clase dentro del elemento activo
                         - El cms que usemos se encargará de forma dinámica de asignara la clase, pero nosotros asignamos la clase html -->
-                        <li class="active"> <a href="index.html">Inicio</a></li>
-                        <li> <a href="nosotros.html">Nosotros</a></li>
-                         <li> <a href="servicios.html">Servicios</a></li>
-                         <li> <a href="contacto.html">Contacto</a></li>
+                    <li class="active"> <a href="index.html">Inicio</a></li>
+                    <li> <a href="nosotros.html">Nosotros</a></li>
+                    <li> <a href="servicios.html">Servicios</a></li>
+                    <li> <a href="contacto.html">Contacto</a></li>
 
-                    </ul>
-                </nav>
+                </ul>
+            </nav>
 
 
-     </header>
-     <!-- Como vemos en el diseño, podemos ver dos partes, el cuerpo y el boton de bajar  -->
-     <div class="texto-encabezado">
-         <h1>Diseño de APPs para empresas</h1>
-         <p>Creamos aplicaciones según las necesidades y requerimientos de nuestros clientes</p>
-         <a href="contacto.html">Ponte en contacto</a>
-     </div>
+        </header>
+        <!-- Como vemos en el diseño, podemos ver dos partes, el cuerpo y el boton de bajar  -->
+        <div class="texto-encabezado">
+            <h1>Diseño de APPs para empresas</h1>
+            <p>Creamos aplicaciones según las necesidades y requerimientos de nuestros clientes</p>
+            <a href="contacto.html">Ponte en contacto</a>
+        </div>
 
-      <!--Lo indico fuera del cuerpo, para que siempre este al final del bloque-->
-      <div class="fecha-bajar"><a href="#agencia">Boton bajar</a></div>
+        <!--Lo indico fuera del cuerpo, para que siempre este al final del bloque-->
+        <div class="fecha-bajar"><a href="#agencia">Boton bajar</a></div>
 
     </section>
     <section class="agencia" id="agencia">
-      
-      <h2> Agencia de programacion de aplicaciones</h2>
-      <p> Wakaya Labs te asesora en el desarrollo y el diseño para que tu Aplicación Movil salga a la luz. Ponemos a tu disposición las mejores plataformas del mundo de las telecomunicaciones.</p>
-      <p>Ponemos a tu alcance un servicio adaptado a tus necesidades, desde una consultoría integral con supervisión de todos y cada uno de los pasos que has de seguir para crear un negocio actual (comunicación, diseño corporativo, tecnologías...) a productos adaptados a metodologías ágiles de creación de apps diseñadas por nosotros y avaladas por nuestros años de experiencia.</p>
-      <images src="images/agencia.svg" alt="Agencia"></images>
-       
-        
+
+        <h2> Agencia de programacion de aplicaciones</h2>
+        <p> Wakaya Labs te asesora en el desarrollo y el diseño para que tu Aplicación Movil salga a la luz. Ponemos a tu disposición las mejores plataformas del mundo de las telecomunicaciones.</p>
+        <p>Ponemos a tu alcance un servicio adaptado a tus necesidades, desde una consultoría integral con supervisión de todos y cada uno de los pasos que has de seguir para crear un negocio actual (comunicación, diseño corporativo, tecnologías...) a productos adaptados a metodologías ágiles de creación de apps diseñadas por nosotros y avaladas por nuestros años de experiencia.</p>
+        <images src="images/agencia.svg" alt="Agencia"></images>
+
+
     </section>
+
+    <section class="tu-mejor-seleccion">
+        <!-- Colocamos el span por cambiar de color-->
+        <h2>¿Porque somos <span>tu mejor elección? </span></h2>
+        <p>Desarrollo web y Apps para empresas y profesionales</p>
+        <!--  ⚠️INFO: Creamos dos listas por la maquetación para movil es distinta que para ordenador 📱🚫🖥 -->
+        <!-- Nuestra primera lista -->
+        <ul>
+            <li>
+                <h4>Aplicaciones para la nube</h4></li>
+            <li>
+                <h4>Fábrica de software</h4></li>
+            <li>
+                <h4>Gestión en la Nube</h4></li>
+        </ul>
+
+        <!-- Segunda lista -->
+        <ul>
+            <li>
+                <h4>Videojuegos</h4></li>
+            <li>
+                <h4>Diseño personalizado</h4></li>
+            <li>
+                <h4>Funciones a medida</h4></li>
+        </ul>
+    </section>
+
+    <main class="servicios">
+        <!--ZONA CALIENTE -->
+        <h2>Nuestros servicios</h2>
+        <!--etiqueta article, para ser más semántico -->
+        <article>
+            <img src="images/" alt="Servicios">
+            <!--sigue la secuencia de anidacion de los titulos h2, h3 -->
+            <h3>Desarrollo de Aplicaciones Mobiles</h3>
+        </article>
+        <article>
+            <img src="images/" alt="Consultoría">
+            <!--sigue la secuencia de anidacion de los titulos h2, h3 -->
+            <h3>Consultoría Tecnológica</h3>
+        </article>
+        <article>
+            <img src="images/" alt="Marketing">
+            <!--sigue la secuencia de anidacion de los titulos h2, h3 -->
+            <h3>Marketing y publicidad Movil</h3>
+        </article>
+        <!--FIN de zona caliente -->
+    </main>
+    <!--En esta sección mostraremos un pluging para mostrar nuestras imágenes de una manera muy chula -->
+    <section class="ultimos-proyectos">
+        <h2>Últimos proyectos</h2>
+        <a href="#"><h4>Proyectos en Swift</h4>
+        <img src="images/" alt="proyecto swift">
+        
+        </a>
+
+    </section>
+
+    <!-- Pie de página -->
+    <!-- Asignaremos un rol a aquella sección que muestra contenido complementario -->
+    <footer class="pie-de-pagina" role="contentinfo">
+        <p>2017 © NETWORK Todos los derechos reservados</p>
+        <ul>
+            <li>Facebook</li>
+            <li>Twitter</li>
+            <li>Youtube</li>
+        </ul>
+    </footer>
+
+    <!-- -->
+    <a href="#" class="ir-arriba"> Ir arriba</a>
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
-    </body>
-    </html>
+</body>
+
+</html>
+
+
+🔖Recomendacion 💡truco ⚠️INFO:
